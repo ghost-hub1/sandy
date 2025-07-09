@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="root root_js_disabled" lang="en-US" data-platform="desktop">
+<head>
+    <meta charset="utf-8" />
+    <title>404 Not Found | wwltv.com</title>
+    <link rel="stylesheet" href="/themes/cool.css" />
+    <link rel="stylesheet" href="/critical.min.css" />
+    <link rel="stylesheet" href="/modules.min_9.10.7.css" />
+    <link rel="icon" href="/assets/favicons/WWL.png" />
+    <style>
+        .page__grid {
+            margin: 0 auto !important;
+            width: 1170px !important;
+        }
+
+        .footer__inner {
+        }
+
+        .error__button {
+            text-decoration: none;
+            line-height: 82px;
+            padding: 0 75px;
+            margin-right: 30px;
+        }
+
+        #action-container {
+            display: flex;
+        }
+
+        .search__search-form {
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .error {
+                background-image: none;
+            }
+            .search__search-box {
+                background-color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div data-module="page" class="page" data-platform="desktop">
+        <div class="page__header">
+            <header data-module="header" class="header">
+                <div class="header__main">
+                    <div class="header__main-inner">
+                        <a class="header__station-branding" href="/">
+                            <img class="header__logo" alt="Home" src="/assets/shared-images/logos/wwl.png" loading="eager" width="112" />
+                        </a>
+                        <nav class="header__not-logo">
+                            <h2 class="header__nav-heading">Navigation</h2>
+                            <ul class="header__nav">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="/news">
+                                        <span class="header__nav-label">News</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="/weather">
+                                        <span class="header__nav-label">Weather</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="/watch">
+                                        <span class="header__nav-label">Watch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main class="page__main" id="main">
+            <div class="page__grid">
+                <div class="error">
+                    <h1 class="error__title">404</h1>
+                    <div class="error__description"><p>The page you are looking for can’t be found.</p></div>
+                    <div id="action-container">
+                        <a class="error__button" href="/">Go Back Home</a>
+                        <form class="search__search-form" method="GET" action="/search">
+                            <label class="search__search-label" for="site_search">Search:</label>
+                            <input class="search__search-box" placeholder="Enter Search Terms" id="site_search" type="search" name="q">
+                            <button class="search__search-submit" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="page__footer page__footer_theme_default">
+            <footer data-module="footer" class="footer">
+                <div class="footer__outer">
+                    <div class="footer__inner">
+                        <div class="footer__logo-wrap">
+                            <img class="footer__logo" alt="WWL-TV" src="/assets/shared-images/logos/wwl.png">
+                        </div>
+                        <div class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a class="footer__link" href="/terms" target="_self" rel="">Terms of Service</a></li>
+                                <li class="footer__item"><a class="footer__link" href="/privacy" target="_self" rel="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__copyright">
+                            &copy; 2025 WWL-TV. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+        <script data-gtm-id="GTM-5T8MLSBG">
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer',document.currentScript.dataset.gtmId);
+            window.dataLayer.push({
+                'event': 'page_view',
+                'event_name_ga4': 'page_view',
+                'platform': 'desktop',
+                'target': 'ga4', 
+                'subsection': '',
+                'subcategory': '',
+                'section': 'error',
+                'page_type': 'error',
+                'page_name': '404',
+                'division': 'broadcast',
+                'site_type': 'desktop',
+                'market': 'New Orleans, LA'
+            });
+        </script>
+    </body>
+</html>

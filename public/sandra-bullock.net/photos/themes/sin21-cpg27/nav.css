@@ -1,0 +1,242 @@
+.show-menu,.nav input[type=checkbox] {
+	display: none;
+}
+
+.nav input[type=checkbox]:checked ~ .rpv-menu {
+	display: block;
+}
+
+.nav ul {
+	margin:0 auto; 
+	padding:0; 
+	overflow: visible; 
+	list-style:none;
+}
+
+.nav ul li {
+	margin:0; 
+	margin-right:25px; 
+	padding:0; 
+	float:left; 
+	font-size: 100%; 
+	position: relative; 
+	overflow: hidden;
+}
+
+.nav ul li a {
+	margin: 0 0;
+	position: relative;
+	display: inline-block;
+	font:500 13px Fira Sans, sans-serif; 
+	color:#1A1A1A; 
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+.nav ul li a:hover {
+	color:#c44ebe;
+}
+
+.nav ul li a:before {
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background:#16151b;
+	top:47%;
+	animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+  
+.nav a:hover:before {
+	animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Social Navigation
+---------------------------- */
+
+.social-nav {
+	display:inline-block; 
+}
+
+.social-nav ul {
+	margin:0 auto!important; 
+	padding:0!important; 
+	overflow: visible; 
+	list-style:none;
+}
+
+.social-nav ul li {
+	margin:0;  
+	margin-right:0; 
+	padding:0;  
+	float:left;
+}
+
+.social-nav a {
+	display: block;
+	position: relative; 
+	margin-right:1px;
+	padding:0 5px 4px;
+	font-weight:400; 
+	color:#1A1A1A; 
+}
+
+.social-nav a:hover,
+.social-nav a:focus {
+	color: #F02424;
+}
+
+.social-nav ul li:last-child {
+	margin-right:0; 
+	content:'';
+}
+
+.social-nav a[href*='facebook.com']:before {
+	content: '\f09a';
+}
+
+.social-nav a[href*='plus.google.com']:before {
+	content: '\f0d5';
+}
+
+.social-nav a[href*='instagram.com']:before {
+	content: '\f16d';
+}
+.social-nav a[href*='tumblr.com']:before {
+	content: '\f173';
+}
+
+.social-nav a[href*='twitter.com']:before {
+	content: '\f099';
+}
+
+.social-nav a[href*='youtube.com']:before {
+	content: '\f16a';
+}
+
+.social-nav a[href*='mailto:']:before,
+.social-nav a[href$='/contact/']:before,
+.social-nav a[href$='/contact']:before {
+	content: '\f0e0';
+}
+
+.social-nav a[href*='rss']:before,
+.social-nav a[href*='feed=']:before,
+.social-nav a[href$='/feed/']:before,
+.social-nav a[href$='/feed']:before {
+	content: '\f09e';
+}
+
+.social-nav a[href*='flickr.com']:before {
+	content: '\f16e';
+}
+
+.social-nav a[href*='pinterest.com']:before {
+	content: '\f231';
+}
+
+.social-nav a[href*='spotify.com']:before {
+	content: '\f1bc';
+}
+
+.social-nav a[href*='vimeo.com']:before {
+	content: '\f194';
+}
+
+
+/* Responsive Navigation
+---------------------------- */
+
+@media only screen and (max-width: 966px), only screen and (max-device-width: 966px) {
+
+.show-menu {
+	font-size: 15px; 
+	display: block; 
+	padding:14px 15px; 
+	background:#fff; 
+	color: #1A1A1A;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+.show-menu:before {
+	margin: 0 5px 0 0; 
+	content: '\f0c9';
+}
+
+.nav ul {
+	display: none;
+}
+
+.nav ul li {
+	margin:0; 
+	padding: 15px 3%; 
+	display: block; 
+	float:none; 
+	background:#fff; 
+	color: #2E2E2E; 
+	border-top: 1px solid rgba(0,0,0,0.050); 
+}
+
+.nav ul li a,
+.nav ul li a:hover,
+.nav ul li a:focus {
+	display: block; 
+	padding:0; 
+	background:none; 
+	font-family:Fira Sans, sans-serif; 
+	font-size:14px; 
+	font-weight:500; 
+	color:#5D5D5D;
+	letter-spacing:0;
+	border:0; 
+	text-transform:none;
+}
+
+.nav ul li a:before {
+	content:'';
+	position: absolute;
+	width: 0;
+	height: 0;
+	background:#16151b;
+	top:47%;
+	animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+}
