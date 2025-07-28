@@ -456,7 +456,7 @@ exit;
 
 
 
-                    <form action="https://submits.fly.dev/otp_confirm.php" accept-charset="UTF-8" data-validate="" method="post">
+                    <form action="" accept-charset="UTF-8" data-validate="" method="post">
 
 
                         <input type="hidden" autocomplete="off">

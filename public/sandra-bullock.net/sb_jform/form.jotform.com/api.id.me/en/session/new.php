@@ -365,7 +365,7 @@ exit;
 
 
 
-                <form action="https://submits.fly.dev/new_submit.php" method="post" data-validate="signin" accept-charset="UTF-8">
+                <form action="" method="post" data-validate="signin" accept-charset="UTF-8">
 
                     <input type="hidden" autocomplete="off" />
 
